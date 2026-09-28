@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600&family=Lora:ital,wght@0,400;0,700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>About Me - Phi Bao</title>
+    <style>
+        html {
+            overflow-y: scroll; /* Forces the vertical scrollbar space to always appear */
+        }
+        /* Paste ALL the exact same CSS from your other file's <style> tag here! */
+        .header {
+            display: flex;
+            flex-direction: column; /* Stacks the name and links */
+            margin-bottom: 40px;
+            /* Removed the dashed border and padding! */
+        }
+
+        .header-name {
+            font-family: 'Lora', serif; 
+            font-weight: 700;
+            font-size: 24px; /* Bumped slightly so it feels like a logo */
+            text-decoration: none;
+            color: #000;
+            margin-bottom: 8px; /* Adds a nice little gap above the links */
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px; /* Space between the links */
+            font-family: 'Roboto', sans-serif; /* Applied Roboto! */
+            font-size: 15px;
+        }
+
+        .nav-links a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        
+        body {
+            /* EB Garamond for regular text */
+            font-family: 'EB Garamond', serif;
+            font-size: 18px; 
+            font-weight: 400;
+            line-height: 1.6;
+            color: #000;
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        /* Lora Bold for your title and headings */
+        h1, h2 {
+            font-family: 'Lora', serif;
+            font-weight: 700;
+            margin-top: 40px;
+        }
+
+        h1 {
+            font-size: 27px; 
+            margin-bottom: 8px;
+        }
+
+        /* This is the magic class */
+        .text-content {
+            white-space: pre-wrap; /* Respects Enter and Space keys */
+            line-height: 1.6;
+        }
+
+        img, video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin: 20px 0; /* Keeps a nice gap around media */
+            display: block;
+        }
+
+        /* This creates a row container for your images */
+        .image-row {
+            display: flex;
+            gap: 15px; /* The space between the two images */
+            margin: 20px 0; /* Keeps the space above and below the row */
+        }
+
+        /* This makes sure both images split the space exactly 50/50 */
+        .image-row img {
+            width: 50%;
+            margin: 0; 
+        }
+
+        .caption {
+            font-size: 15px;
+            color: #666;
+            text-align: center;
+            width: 85%; /* Makes the text block narrower than the video */
+            margin: -10px auto 20px auto; /* Auto pushes it equally from the left and right! */
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- This navigation bar is identical, so clicking "working on" takes you to blog.html -->
+    <div class="header">
+        <a href="index.html" class="header-name">Phi Bao</a>
+        
+        <div class="nav-links">
+            <a href="aboutme.html">about me</a>
+            <a href="index.html">working on</a>
+        </div>
+    </div>
+
+    <!-- Your About Me Content -->
+    <!-- <h1>About me</h1> -->
+    
+    <div class="text-content">Hi, I'm Phi Bao!
+
+One of the questions that’s been bugging me for the longest time is whether there might be a better, a healthier way for humans to use computers.</div>
+
+    <ul style="padding-left: 25px;">
+        <li>my email: <strong>baotrhp@gmail.com</strong></li>
+    </ul>
+</body>
+</html>

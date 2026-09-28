@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts: Combined yours and added Roboto! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600&family=Lora:ital,wght@0,400;0,700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <title>My Portfolio</title>
+    <style>
+        html {
+            overflow-y: scroll; /* Forces the vertical scrollbar space to always appear */
+        }
+        .header {
+            display: flex;
+            flex-direction: column; /* Stacks the name and links */
+            margin-bottom: 40px;
+            /* Removed the dashed border and padding! */
+        }
+
+        .header-name {
+            font-family: 'Lora', serif; 
+            font-weight: 700;
+            font-size: 24px; /* Bumped slightly so it feels like a logo */
+            text-decoration: none;
+            color: #000;
+            margin-bottom: 8px; /* Adds a nice little gap above the links */
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px; /* Space between the links */
+            font-family: 'Roboto', sans-serif; /* Applied Roboto! */
+            font-size: 15px;
+        }
+
+        .nav-links a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        
+        body {
+            /* EB Garamond for regular text */
+            font-family: 'EB Garamond', serif;
+            font-size: 18px; 
+            font-weight: 400;
+            line-height: 1.6;
+            color: #000;
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        /* Lora Bold for your title and headings */
+        h1, h2 {
+            font-family: 'Lora', serif;
+            font-weight: 700;
+            margin-top: 40px;
+        }
+
+        h1 {
+            font-size: 27px; 
+            margin-bottom: 8px;
+        }
+
+        /* This is the magic class */
+        .text-content {
+            white-space: pre-wrap; /* Respects Enter and Space keys */
+            line-height: 1.6;
+        }
+
+        img, video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin: 20px 0; /* Keeps a nice gap around media */
+            display: block;
+        }
+
+        /* This creates a row container for your images */
+        .image-row {
+            display: flex;
+            gap: 15px; /* The space between the two images */
+            margin: 20px 0; /* Keeps the space above and below the row */
+        }
+
+        /* This makes sure both images split the space exactly 50/50 */
+        .image-row img {
+            width: 50%;
+            margin: 0; 
+        }
+
+        .caption {
+            font-size: 15px;
+            color: #666;
+            text-align: center;
+            width: 85%; /* Makes the text block narrower than the video */
+            margin: -10px auto 20px auto; /* Auto pushes it equally from the left and right! */
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="header-name">Phi Bao</a>
+        
+        <div class="nav-links">
+            <a href="aboutme.html">about me</a>
+            <a href="index.html">working on</a>
+        </div>
+    </div>
+
+    <h1>Blending desktop UX to touchscreens – a healthier computer interface for humans</h1>
+
+    <!-- Wrap your giant blocks of text in this ONE div -->
+    <div class="text-content">Spending much time learning, working, studying on computer, there’s a kind of questions that always bothers me: Are we stuck with using computer like this? What is the best comupter interface for human? How long do we have to wait for a better computer interface? Do we have to sit like this forever?
+
+Because I feel like any one of us could get as good at any thing, as long as we have enough time and attention working on the computer. But we have to have a place to sit and work on. So everytime we learn and work we have to be on the desk? The modern world requires us to sit at one place for long time to work. But we don’t feel we’re growing stronger like hunting and gathering, do we? We weren’t born for this, right? We want to be flexible, to move around, to use our bodies, aren’t we? 
+
+I wonder if we have to be stuck with this inevitable lifestyle? 
+As we are getting more advanced and developed, why can’t we be stronger? Or at least healthy and normally strong, flexible like we are born to be? 
+
+So what does a dream or ideal computer that aids human best look like?
+
+I don’t think the VR/AR technology is the direction. Because I don’t think we want something that straps us in, traps us, and takes us away from our reality.
+I think we would rather want a device that enable us to be more human, work like human, move like human.
+Something that we can carry along, pick up, hold in our hands and drop easily like pen and paper, knife, sword, or wrench.
+
+We have mobiles like ipads and smartphones, but how much can we actually do on them? Doesn’t it feel kinda distracting when working on touchscreens?
+
+Working on an ipad is still not as efficient as working on desktop.
+
+So I wonder why? Why working on ipad doesn’t feel right? What makes working on desktop different from working on touchscreen? Can we make the working on ipad or touchscreen better? I’m interested in what could be different. 
+
+This is what i have been imagining and experimenting what would be a more desirable ipad-liked device, a kind of ipad that would allow me to use easier, and the working experience may feel like on desktop. 
+
+First. What if we decouple the clicking on the touchscreen from the pointing?</div>
+
+    <!-- Drop your images or videos between the text blocks -->
+    <video id="decoupling-video" controls>
+        <source src="decoupling.mp4" type="video/mp4">
+    </video>
+
+    <!-- This tiny script turns the volume to 50% -->
+    <script>
+        document.getElementById("decoupling-video").volume = 0.5; 
+    </script>
+
+    <div class="text-content">I suggest when a finger touches the screen, it acts like a pointer pointing to an element on the screen. While there will be a button responsible for the clicking/selecting. This is somehow similar to the desktop mouse. So the fingers or the hand can rest on the screen without worrying they will cause or trigger any action. Because I feel like our touchscreens are more like water surface than paper surface. Each movement or touch on the screen will lead to a response. And everytime we make an interaction, the finger has to perform quite the same movement, touch down then up to finish the interaction. I think this might be what cause us to exert more coginitve power or attention.
+The video above is a very primitive demo to show what it would look like. I imagine there can be 3 buttons corresponds to left click, scroll, right click or one or two more. And the cluster of buttons might be on the side or deattachable to hold on hand for bigger screen.</div>
+
+    <div class="image-row">
+    <img src="sidebuttons.PNG" alt="Left side picture">
+    <img src="remotebuttons.PNG" alt="Right side picture">
+    </div>
+
+    <div class="text-content">Then what concerns me the most is the text input method on touchscreen. The QWERT touchscreen keyboard still doens’t feel right to me. I feel that our fingers can swipe and slide quite fast and it may be better than the feeling of aiming and striking over a table of characters. Like writing a paragraph with pen may feel easier than texting it out on phone or ipad.  
+This is a kind of swipe based input method i arrived at through many ideas and experiments.</div>
+
+    <!-- Drop your images or videos between the text blocks -->
+    <video id="inputmethod-video" controls style="height: 500px; width: auto; margin: 20px auto;">
+        <source src="inputmethod1.mp4" type="video/mp4">
+    </video>
+
+    <!-- This tiny script turns the volume to 33% -->
+    <script>
+        document.getElementById("inputmethod-video").volume = 0.33; 
+    </script>
+    
+    <div class="caption">There are 6 keys. Trigger/activate a key by hit it first then drag the finger to hit the circle. Trigger a combo of 2 keys makes a character. </div>
+    <div class="text-content">As I assume, these might be the pros:
+  -  Allow finger to slide and swipe, make the experience feels like writing.
+  -  Instead of drawing the whole character shape, you only need 2 deliberate strokes, so it may be faster.
+  -  Less cognitive load, because you don’t have to continuously aim and choose over a table of characters.
+Things to concern:
+  -  Speed. factors: which arrangement of keys to characters is the most optimal, sampling rate of the screen, and the screen’s surface friction
+  -  Learning curve to get familiar.
+
+A lot of times I did look at and question if technology like handwritten text recognition is more suitable or convenient but it doesn’t quite hit the mark for me. It is more like a correcting filter layer after the finger has made the movement/stroke. This is somehow make us rely on the machine intelligence/ability to understand the context. But what I want to suggest is that we might prefer to move our finger more precisely. We might want to use and improve our bodies, to make our hands and fingers more agile and stronger. This may require us to have kind of a continuous feedback for the hands/fingers to adjust their movements. Like with the physical keyboard, the hands and fingers are given a continuous tactile feedback because they are constantly touching and feeling the keys. While writing with a pen relys more on the visual feedback from the character shape. The touchscreen keyboard however doesn’t allow us to continuously touch it, but rather makes us touch it in discrete bouts. So it’s hard for our hands to readjust, since they are prone to imprecision.
+
+So, this is my attempt to explore whether there might be a better way for humans to use computers.
+It just doesn’t make sense to me, how we are living and working with computers now.
+I really wish that we could take back our attention. 
+What if we have a device that we enjoy using more, that doesn’t drain or deplete us that we can pick up like paper to draw and to write? What if we can learn easily and enjoyably?
+A device that might allow us to move more like human, a device that makes working like playing.  
+I really want to continue to work on this, just as simple as having a good explanation first. 
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
